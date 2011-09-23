@@ -2,7 +2,7 @@
 <root>
   <% @data.each do |panel| %>
   <item>
-    <text><![CDATA[<%= panel[:text] %>]]></text>
+    <text><![CDATA[<%= panel[:text].html_safe %>]]></text>
     <type><%=
       case panel[:type]
         when :alert then 1
