@@ -3,7 +3,7 @@
   <item>
     <value><%= @data[:value] %></value>
 	<text></text>
-    <prefix><![CDATA[<%= @data[:display].html_safe %>]]></prefix>
+    <prefix><![CDATA[<%= @data[:display].html_safe if @data[:display] %>]]></prefix>
   </item>
   <item>
     <value><%= @data[:previous] %></value>
