@@ -2,7 +2,7 @@
 <root>
   <item>
     <value><%= @data[:value] %></value>
-    <text><%= @data[:display] %></text>
+    <prefix><![CDATA[<%= @data[:display].html_safe %>]]></prefix>
   </item>
   <item>
     <value><%= @data[:previous] %></value>
