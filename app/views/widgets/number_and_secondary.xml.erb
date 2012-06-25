@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+<% if @data.has_key?(:reverse) %>
+  <type>reverse</type>
+<% end %>		
   <item>
     <value><%= @data[:value] %></value>
 	<text></text>
